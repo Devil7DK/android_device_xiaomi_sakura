@@ -1,0 +1,10 @@
+allow untrusted_app_27 proc_vmstat:file { read };
+allow untrusted_app_27 proc_vmstat:file { open };
+allow untrusted_app_27 proc_vmstat:file { getattr };
+allow untrusted_app_27 device:chr_file { ioctl };
+allow untrusted_app_27 device:chr_file { read write };
+allow untrusted_app_27 bluetooth_prop:file { read };
+allow untrusted_app_27 bootloader_boot_reason_prop:file { read };
+allow untrusted_app_27 boottime_prop:file { read };
+allow untrusted_app_27 ctl_bootanim_prop:file { read };
+allow untrusted_app_27 ctl_bugreport_prop:file { read };
