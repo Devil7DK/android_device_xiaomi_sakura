@@ -39,3 +39,24 @@ allow init node:udp_socket { node_bind };
 allow init init:udp_socket { getattr };
 allow init bluetooth:binder { call };
 allow init init:capability2 { block_suspend };
+
+allow init vfat:file { open read };
+allow init cgroup:file create;
+
+allow init fsck:process noatsecure;
+allow init hal_gatekeeper_qti:process noatsecure;
+allow init hal_keymaster_qti:process noatsecure;
+allow init hal_wifi_supplicant_default:process noatsecure;
+allow init mm-qcamerad:process noatsecure;
+allow init qti_init_shell:process noatsecure;
+allow init sysfs:dir write;
+allow init system_file:file execute_no_trans;
+allow init ueventd:process noatsecure;
+allow init vendor_init:process noatsecure;
+allow init proc:file setattr;
+allow init hwservicemanager:process noatsecure;
+allow init servicemanager:process noatsecure;
+allow init sysfs:dir add_name;
+allow init vdc:process noatsecure;
+allow init vndservicemanager:process noatsecure;
+allow init vold:process noatsecure;
