@@ -29,7 +29,7 @@ namespace ir {
 namespace V1_0 {
 namespace implementation {
 
-#define LIRC_DEV_PATH "/dev/lirc0"
+#define LIRC_DEV_PATH "/dev/peel_ir"
 
 static const int dutyCycle = 33;
 
