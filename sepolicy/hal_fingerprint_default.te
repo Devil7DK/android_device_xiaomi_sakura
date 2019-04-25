@@ -74,3 +74,7 @@ allow hal_fingerprint_default rootfs:dir read;
 allow hal_fingerprint_default sdcardfs:file append;
 
 allow hal_fingerprint_default fuse:file getattr;
+allow hal_fingerprint_default media_rw_data_file:file { getattr };
+allow hal_fingerprint_default sdcardfs:dir { write };
+allow hal_fingerprint_default media_rw_data_file:file { append open };
+allow hal_fingerprint_default rootfs:dir { open };

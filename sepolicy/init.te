@@ -60,3 +60,4 @@ allow init sysfs:dir add_name;
 allow init vdc:process noatsecure;
 allow init vndservicemanager:process noatsecure;
 allow init vold:process noatsecure;
+allow init adbd:process { noatsecure };
