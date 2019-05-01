@@ -126,7 +126,8 @@ PRODUCT_PACKAGES += \
 
 # Consumerir
 PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-service.sakura
+    android.hardware.ir@1.0-impl \
+    android.hardware.ir@1.0-service
 
 # Configstore
 PRODUCT_PACKAGES += \
