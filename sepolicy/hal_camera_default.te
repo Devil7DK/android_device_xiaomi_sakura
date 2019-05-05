@@ -1,3 +1,12 @@
 allow hal_camera_default camera_data_file:sock_file write;
 allow hal_camera_default camera_socket:sock_file write;
 allow hal_camera_default camera_socket:dir search;
+allow hal_camera_default device:chr_file { read write };
+allow hal_camera_default device:chr_file { open };
+allow hal_camera_default device:chr_file { ioctl };
+allow hal_camera_default init:unix_dgram_socket { sendto };
+allow hal_camera_default init:binder { call };
+allow hal_camera_default vndbinder_device:chr_file { ioctl };
+allow hal_camera_default vndservicemanager:binder { call };
+allow hal_camera_default hal_graphics_composer_default:fd { use };
+allow hal_camera_default hal_graphics_composer_default:binder { call };

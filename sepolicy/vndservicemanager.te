@@ -1,2 +1,6 @@
 allow vndservicemanager runtime_event_log_tags_file:file read;
 allow vndservicemanager runtime_event_log_tags_file:file open;
+allow vndservicemanager hal_camera_default:dir { search };
+allow vndservicemanager hal_camera_default:file { read };
+allow vndservicemanager hal_camera_default:file { open };
+allow vndservicemanager hal_camera_default:process { getattr };

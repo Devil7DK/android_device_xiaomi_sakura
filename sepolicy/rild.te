@@ -1,3 +1,8 @@
 allow rild rild_file:file r_file_perms;
 allow rild vendor_data_file:file { getattr lock };
 allow rild vendor_data_file:file { getattr lock open read };
+allow rild vndbinder_device:chr_file { ioctl };
+allow rild rild:socket { ioctl };
+allow rild socket_device:sock_file { write };
+allow rild vendor_data_file:file { lock };
+allow rild vendor_data_file:file { getattr };

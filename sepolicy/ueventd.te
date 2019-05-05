@@ -2,3 +2,7 @@ allow ueventd fpc_sysfs:file rw_file_perms;
 
 allow ueventd wifi_vendor_data_file:dir search;
 allow ueventd wifi_vendor_data_file:file { getattr open read };
+allow ueventd vendor_data_file:file { read };
+allow ueventd vendor_data_file:file { open };
+allow ueventd vfat:dir { search };
+allow ueventd vfat:file { read };
