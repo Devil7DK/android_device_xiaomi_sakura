@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/viper_sakura.mk
+    $(LOCAL_DIR)/du.mk
